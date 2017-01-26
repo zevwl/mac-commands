@@ -7,3 +7,4 @@ killall Finder
 echo Finder killed
 
 # Finder is relaunched at the same location by default, no action required
+echo Finder will relaunch automatically 
