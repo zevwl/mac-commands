@@ -1,3 +1,4 @@
 #!/bin/sh
 
-Echo Template file
+echo Template file
+
