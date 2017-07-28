@@ -1,8 +1,14 @@
 #!/bin/sh
 
+echo -n 'TLD: '
+read tld
+
+echo -n 'Password:'
 read -s password
 
-proxy=http://zevwl:$password@livigent.bhphotovideo.com:8080
+echo '' # just a newline
+
+proxy=http://zevwl:$password@livigent.bhphotovideo.$tld:8080
 
 npm config set proxy $proxy
 npm config set https-proxy $proxy
